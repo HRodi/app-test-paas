@@ -5,4 +5,11 @@ body {
 
 button {
     margin-right: 10px;
+    background-color: #0055ff;
+    border: none;
+    padding: 0.5em;
+}
+
+button:hover {
+    background-color: #1354d6;
 }
