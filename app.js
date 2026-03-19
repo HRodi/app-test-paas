@@ -3,12 +3,13 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 // Servir la GUI estática
-app.use('/gui', express.static('public'));
+app.use(express.static('public'));
 
 // Endpoint liviano (latencia base)
 app.get('/', (req, res) => {
-  res.send('OK');
+  res.sendFile(__dirname + '/public/index.html');
 });
+
 
 // Endpoint CPU-bound (stress test)
 app.get('/cpu', (req, res) => {
