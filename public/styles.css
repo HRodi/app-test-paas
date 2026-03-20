@@ -13,3 +13,14 @@ button {
 button:hover {
     background-color: #1354d6;
 }
+
+.enlaceBoton {
+    font-weight: bold;
+    color: white;
+    background-color: #0055ff;
+    padding: 0.33em;
+    text-decoration: none;
+}
+.enlaceBoton:hover{
+    background-color: #1354d6;
+}
